@@ -1,0 +1,11 @@
+# student1=["usha","vyshu"]
+# print(student1)
+
+student =[
+    "usha",
+    "vyshu",
+    "deeksha"
+]
+student.append("hemanth")
+student.remove("deeksha")
+print(student)
