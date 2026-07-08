@@ -10,15 +10,31 @@
 #     num=int(input("Enter a number: "))
 #     print(num)
 # except ValueError:
-#     print("only number allowed")
+#     print("only number allowed") ########specific execption
     
+# try:
+#     a=int(input("enter A:"))
+#     b=int(input("enter B:"))
+#     print(a/b)
+# except ZeroDivisionError:
+#     print("cannot divide by zero")
+# except ValueError:
+#     print("only number allowed")#########multiple execption
+
+    
+# #finally block means in exception block if there is error or no error it is always executed
+# try:
+#     file=open("data,txt")
+#     print(file.read())
+# except:
+#     print("file error")
+# finally:
+#     print("program completed")
+
 try:
-    a=int(input("enter A:"))
-    b=int(input("enter B:"))
-    print(a/b)
-except ZeroDivisionError:
-    print("cannot divide by zero")
-except ValueError:
-    print("only number allowed")
-    
+    print(10/2)
+except:
+    print("error")
+else:
+    print("success")
     
