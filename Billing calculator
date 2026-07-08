@@ -1,0 +1,25 @@
+# product_price=float(input("Enter the price of the product:"))
+# delivery_charge=float(input("Enter the delivery charge:"))
+# discount=float(input("Enter the discount:"))
+# gst=float(input("Enter the gst:"))
+# discounted_price=product_price-(product_price*discount/100)
+# Total_price=discounted_price+delivery_charge
+# print("product price:",product_price)
+# print("discounted price:",discounted_price)
+# print("delivery charge:",delivery_charge)
+# print("total price:",Total_price)
+
+
+product=input("ENter product name:")
+price=int(input("Enter price:"))
+quantity=int(input("Enter quantity:"))
+discount=int(input("Enter discount amount:"))
+total=price*quantity
+final_bill=total-discount
+print("product:",product)
+print("Total Amount:",total)
+print("Final Bill:",final_bill)
+
+
+
+

@@ -1,0 +1,42 @@
+# age=25
+# salary=5000
+# if age>18 and salary>3000:
+#     print("loan Approved")
+
+
+# day="sunday"
+# if day=="sunday" or day=="saturday":
+#     print("holiday")
+
+# day="sunday" 
+# if not day=="monday":
+#     print("working day") 
+
+# Pin=int(input("Enter your pin:"))
+# if Pin==1234:
+#     print("Pin is correct")
+#     amt=int(input("Enter the amount:"))
+#     check_balance=int(input("Enter your balance:"))
+#     withdrawal_limit=5000
+#     if amt<=check_balance and amt<=withdrawal_limit:
+#         print("Withdrawal successful")
+#     else:
+#         print("Withdrawal failed")
+# else:
+#     print("Pin is incorrect")
+    
+    
+def withdraw_money():
+    pin=input("enter pin:")
+    if pin=="1234":
+        amount=int(input("Enter amount:"))
+        balance=10000
+        if amount<=balance:
+            balance=balance-amount
+            print("withdrawal successful")
+            print("remaining balance:",balance)
+        else:
+            print("insufficient balance")
+    else:
+        print("incorrect pin")
+withdraw_money()
