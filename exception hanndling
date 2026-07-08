@@ -1,0 +1,24 @@
+# try:
+#     a=10
+#     b=0
+#     print(a/b)
+# except:
+#print("something went wrong")
+
+
+# try:
+#     num=int(input("Enter a number: "))
+#     print(num)
+# except ValueError:
+#     print("only number allowed")
+    
+try:
+    a=int(input("enter A:"))
+    b=int(input("enter B:"))
+    print(a/b)
+except ZeroDivisionError:
+    print("cannot divide by zero")
+except ValueError:
+    print("only number allowed")
+    
+    

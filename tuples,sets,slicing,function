@@ -1,0 +1,143 @@
+ #########tuples are immutable it cannot be changed
+ ########Difference in list we can change the values(mutablt) but in tuples we cannot change the values(immutable)
+ ##########tuples is a collection used to store multiple items in a single variable
+ 
+# student=("suma","usha","vyshu")
+# print(student)
+
+# numbers=(1,2,3,4,5)
+# print(numbers[-3])
+# print(numbers[0])
+# print(numbers[1:4])
+# print(numbers[4])
+
+# data=(1,2,3) 
+# data[0]=100
+# print(data) #we get error in this program
+
+#######tuple cannot be updated or changed but list can be updated or changed
+
+# x=(1,2,3,4,5,6,1,2,3,2,2,1,3,4,4)
+# print(x.count(3))
+# print(x.count(1))
+# print(x.count(6)) 
+
+# x=("usha","vyshu","usha","vyshu","suma","suma","suma")
+# print(x.count("usha"))
+# print(x.count("vyshu"))
+# print(x.count("suma"))
+# print(x.index("usha"))
+# print(x.index("vyshu"))
+
+# num=(10,20,30,40,50) #slicing example
+# print(num[1:4])
+
+#########sets is a collection: will remove duplicate values : it store only unique values : no index value: indexing:ordered
+# x={1,2,1,3,4,1,4,1,4,5}
+# print(x)
+# data={1,2,3}
+# data.add(7)
+# data.remove(1)
+# print(data)
+
+# a={1,2,3}
+# b={3,4,5}
+# print(a|b) #union
+# print(a&b) #intersection
+# print(a-b) #difference
+
+#########functions is a reusable block of code
+
+# def greeting():
+#     print("hello students")
+# greeting()
+
+########return function
+
+# def add():
+#     return 10 + 20
+# result=add()
+# print(result)
+# def subtract():
+#     return 20-10
+# result=subtract()
+# print(result)
+# def multiply():
+#     return 10*20
+# result=multiply()
+# print(result)
+# def divide():
+#     return 20/10
+# result=divide()
+# print(result)
+
+#########function with arguments
+
+# def add(a,b):
+#     print(a+b)
+# add(10,2)
+# def multiply(a,b):
+#     print(a*b)
+# multiply(10,2)
+# def div(a,b):
+#     print(a/b)
+# div(10,2)
+# def sub(a,b):
+#     print(a-b)
+# sub(10,2)
+
+# def usha(*numders):
+#    print(numders)
+# usha(10,20,30,40,50)
+
+# def add(*num):
+#     total=0
+#     for i in num:
+#         total += i
+#     print(total)
+# add(10,20,30,40,50)
+
+#############kwargs################
+
+# def student(**details):
+#     print("name:",details["name"])
+#     print("age:",details["age"])
+#     print("course:",details["course"])
+
+# student(
+#         name="usha",
+#         age=20,
+#         course="python"
+#     )
+# print(student)
+
+# ########using lambda function
+
+# square=lambda x:x*x
+# print(square(2))
+ 
+# add=lambda a,b:a+b
+# print(add(10,20))
+
+# sub=lambda a,b:a-b
+# print(sub(10,20))
+
+# div=lambda a,b:a/b
+# print(div(10,20))
+
+# mul=lambda a,b:a*b
+# print(mul(10,20))
+
+# usha=lambda x:"even" if x%2==0 else "odd"
+# print(usha(10))
+# print(usha(11)) 
+
+# lower_case=lambda x:x.lower()
+# print(lower_case("USHA"))
+
+xyz=lambda text:len(text)
+print(xyz("usha"))
+
+
+
+

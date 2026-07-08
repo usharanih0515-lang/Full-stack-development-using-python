@@ -1,0 +1,18 @@
+file = open("student.txt","w")
+file.write("hello usha")
+print("data written successfully")
+file.close()
+
+file = open("student.txt", "r")
+data=file.read()
+print(data)
+file.close()
+
+file = open("student.txt", "a")
+file.write("\nhello vyshu")
+file.close()
+print("data appended successfully")
+
+file=open("student.txt","r")
+print(file.read())
+file.close()
