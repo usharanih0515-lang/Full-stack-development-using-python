@@ -1,0 +1,12 @@
+##########magic method
+# __init__,__str__,__len__ is used to call starting and ending letter of the class 
+####################str()##############
+#used for readble object output#######
+
+class student:
+    def __init__(self,name):
+        self.name=name
+    def __str__(self):
+        return self.name
+s=student("usha")
+print(s) #print(s.__str__())

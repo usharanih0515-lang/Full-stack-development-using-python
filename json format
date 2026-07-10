@@ -1,0 +1,12 @@
+# import json
+# student={
+#     "name":"usha",
+#     "age":20,
+# }
+# data=json.dumps(student) #converts python object into json object
+# print(data)
+
+import json
+data='{"name":"usha","age":20}'
+result=json.loads(data) #converts json object into python object
+print(result["name"])
