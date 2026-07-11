@@ -1,0 +1,114 @@
+#########Encapsulation means wrapping variables and methods 
+#########together inside a class and controlling access of the data
+
+#####without encapsulation
+# class bank:
+#     def __init__(self):
+#         self.balance = 100  # Private attribute
+
+# account=bank()
+# account.balance = 1000000
+# print(account.balance)
+
+#########with encapsulation
+# class bank:
+#     def __init__(self):
+#         self.__balance = 100000  # Private attribute
+#     def deposit(self,amount):
+#         self.__balance += amount
+#     def show_balance(self):
+#         print(self.__balance)
+# account=bank()
+# account.deposit(5000)
+# account.show_balance()
+
+###getter method###
+# class employee:
+#     def __init__(self,salary):
+#         self.__salary = salary  # Private attribute
+#     def get_salary(self):
+#         return self.__salary
+
+# emp=employee(50000)
+# print(emp.get_salary())
+###setter method###
+# class employee:
+#     def __init__(self):
+#         self.__salary = 0 # Private attribute
+    
+#     def set_salary(self, amount):
+#         if amount > 0:
+#             self.__salary = amount
+#         else:
+#             print("invalid salary")
+#     def get_salary(self):
+#         return self.__salary        
+# emp=employee()
+# emp.set_salary(50000)
+# print(emp.get_salary())
+
+#####polymorphism#######
+### polymorphism means the same methos nam4 can perform different action depending on the object
+
+# class dog:
+#     def sound(self):
+#         print("dog barks")
+# class cat:
+#     def sound(self):
+#         print("cat meows")
+# Dog=dog()
+# Cat=cat()
+# Dog.sound()
+# Cat.sound()
+
+# class upi:
+#     def pay(self):
+#         print("payment done using upi")
+# class creditcard:
+#     def pay(self):
+#         print("payment done using credit card")
+# class debitcard:
+#     def pay(self):
+#         print("payment done using debit card")
+# Upi=upi()
+# CreditCard=creditcard()
+# DebitCard=debitcard()
+# Upi.pay()
+# CreditCard.pay()
+# DebitCard.pay()
+
+
+###########Abstraction class ########
+####abstraction means hiding internal implementation and showing only necessary features to the user
+
+# from abc import ABC,abstractmethod
+# class vehicale(ABC):
+#     @abstractmethod
+#     def start(self):
+#         pass
+# class car(vehicale):
+#     def start(self):
+#         print("car started")
+# Car=car()
+# Car.start()
+
+from abc import ABC,abstractmethod
+class dog(ABC):
+    @abstractmethod
+    def sound(self):
+        pass
+class cat(dog):
+    def sound(self):
+        print("cat meows")
+class donkey(dog):
+    def sound(self):
+        print("donkey brays")
+class lion(dog):
+    def sound(self):
+        print("lion roars")
+Cat=cat()
+Donkey=donkey()
+Cat.sound()
+Donkey.sound()
+Lion=lion()
+Lion.sound()
